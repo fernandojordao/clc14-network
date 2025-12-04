@@ -14,7 +14,7 @@ resource "aws_vpc" "minha_vpc" {
 
 # Correcao primeira issue
 resource "aws_flow_log" "example" {
-  log_destination      = "arn:aws:s3:::caio-maia-terraform-clc14"
+  log_destination      = "arn:aws:s3:::fernando-jordao-terraform-clc14-automation"
   log_destination_type = "s3"
   traffic_type         = "ALL"
   vpc_id               = aws_vpc.minha_vpc.id
